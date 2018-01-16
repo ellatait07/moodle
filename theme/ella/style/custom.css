@@ -1,0 +1,72 @@
+/* Custom CSS
+-------------------------*/
+div.logo {
+    background: url([[setting:logo]]) 0 0 no-repeat;
+    display: block;
+    float: left;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/** {
+  color: pink!important;
+  background-color: powderblue!important;
+  border: 2px solid moccasin;
+  font-size: 80px!important;
+  text-shadow:100px 10px orchid!important;
+
+
+*:first-letter {
+  font-size: 100px;
+  background-color:lawngreen!important;
+  color:red!important;
+}
+
+p:hover {
+  color:hotpink!important;
+  size: 120px;
+  transition:all 0.5s
+}
+
+h1 {
+  color: springgreen!important;
+}
+
+h2 {
+  color: plum!important;
+}
+
+footer {
+  background-color: springgreen!important;
+}*/
+
+img.small-logo {
+    float: left;
+    height: 35px;
+    margin: 3px 10px 3px 0;
+}
+
+@media (max-width: 767px) {
+    img.small-logo {
+        margin: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar img.small-logo {
+        max-width: 150px;
+    }
+    /* Applying accesshide styles */
+    .navbar .small-logo-container + .brand {
+        position: absolute;
+        left: -10000px;
+        font-size: 1em;
+        font-weight: normal;
+    }
+}
+
+/* Custom CSS Settings
+-------------------------*/
+[[setting:customcss]]
